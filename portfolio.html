@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Индивидуальный Стилист</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="animate.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-container wow slideInDown">
+                <div class="menu">
+                    <div class="MenuMobile" id="MenuMobile">
+                        <nav class="MenuMobile-container">
+                            <a href="index.html#aboutMe" class="MenuMobile-container--item">обо мне</a>
+                            <a href="index.html#services" class="MenuMobile-container--item">услуги</a>
+                            <a href="index.html#blog" class="MenuMobile-container--item">Блог</a>
+                            <a href="index.html#contacts" class="MenuMobile-container--item">Контакты</a>
+                            <div class="MenuMobile-socialIcons">
+                                <a class="icon-yt-back" href="https://www.youtube.com/channel/UCboLlZFp14ZYkz4up1Sml4Q" target="_blank"></a>
+                                <a class="icon-insta-back" href="https://www.instagram.com/yablonskaya.alyona.stylist/" target="_blank"></a>
+                            </div>
+                        </nav>
+                    </div>
+                    <nav class="menu-container">
+                        <a href="index.html#aboutMe" class="menu-container--item">обо мне</a>
+                        <a href="index.html#services" class="menu-container--item">услуги</a>
+                        <a href="index.html#blog" class="menu-container--item">Блог</a>
+                        <a href="index.html#contacts" class="menu-container--item">Контакты</a>
+                    </nav>
+                    <div class="menu-burger" id="menu-burger""></div>
+                    <a href="index.html" class="menu-logo"></a>
+                    <div class="menu-socialIcon__item">
+                        <a href="#" class="icon-yt" href="https://www.youtube.com/channel/UCboLlZFp14ZYkz4up1Sml4Q" target="_blank"></a>
+                        <a href="#" class="icon-insta" href="https://www.instagram.com/yablonskaya.alyona.stylist/" target="_blank"></a>
+                        <a href="#" class="menu-button feedbackModal">оставить запрос</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="portfolioItem-container">
+            <div class="portfolioItem-container__content wow fadeIn">
+                <img src="./images/img7.png" alt="img" class="portfolioItem-container__content--image">
+                <h2 class="portfolioItem-container__content--name">suitable shoes</h2>
+                <p class="portfolioItem-container__content--text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+                    По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+                    <br>
+                    <br>
+                    По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+                    <br>
+                    <br>
+                    По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+                    <br>
+                    <br>
+                    По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых.
+                </p>
+                <div class="portfolioItem-container__content__slider">
+                    <div class="swipe-container slider-active" v-on:swipeleft="onSwipeLeft()" v-on:swiperight="onSwipeRight()">
+                        <img src="./images/img8.png" alt="img" class="portfolioItem-container__content__slider--item w-100 h-100">
+                    </div>
+                    <div class="swipe-container" v-on:swipeleft="onSwipeLeft()" v-on:swiperight="onSwipeRight()">
+                        <img src="./images/image-7.png" alt="img" class="portfolioItem-container__content__slider--item w-100 h-100">
+                    </div>
+                    <div class="swipe-container" v-on:swipeleft="onSwipeLeft()" v-on:swiperight="onSwipeRight()">
+                        <img src="./images/img8.png" alt="img" class="portfolioItem-container__content__slider--item  w-100 h-100">
+                    </div>
+                    <div class="swipe-container" v-on:swipeleft="onSwipeLeft()" v-on:swiperight="onSwipeRight()">
+                        <img src="./images/image-7.png" alt="img" class="portfolioItem-container__content__slider--item  w-100 h-100">
+                    </div>
+                </div>
+                <div class="navigation">
+                    <div class="dots current" v-on:click="currentSlide(1)"></div>
+                    <div class="dots" v-on:click="currentSlide(2)"></div>
+                    <div class="dots" v-on:click="currentSlide(3)"></div>
+                    <div class="dots" v-on:click="currentSlide(4)"></div>
+                </div>
+            </div>
+            <div class="portfolioItem-container__suggestion wow slideInRight">
+                <div class="portfolioItem-container__suggestion--item">
+                    <div class="item__name">favorite <span>jeans</span></div>
+                    <img src="./images/img11.png" alt="" class="item__img">
+                    <div class="item__button">
+                        <a href="#" class="button">читать дальше<i class="fa fa-long-arrow-right ml-3" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="portfolioItem-container__suggestion--item">
+                    <div class="item__name"><div class="insta"></div><span>insga</span>gram</div>
+                    <img src="./images/img12.png" alt="" class="item__img">
+                    <div class="item__button">
+                        <a href="https://www.instagram.com/yablonskaya.alyona.stylist/" target="_blank" class="button">перейти на страницу<i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="portfolioItem-container__socialNetwork">
+                    <p>Следить</p>
+                    <div class="portfolioItem-container__socialNetwork--links">
+                        <a href="https://www.facebook.com/alyona.jablonskaja" target="_blank" class="facebook"></a>
+                        <a href="https://www.instagram.com/yablonskaya.alyona.stylist/" target="_blank" class="instagram"></a>
+                    </div>
+                </div>
+                <div class="portfolioItem-container__suggestion--item">
+                    <div class="item__name">Stylish <span>bags</span></div>
+                    <img src="./images/img13.png" alt="" class="item__img">
+                    <div class="item__button">
+                        <a href="#" class="button">читать дальше<i class="fa fa-long-arrow-right ml-3" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="portfolioItem-container__suggestion--item">
+                    <div class="item__name">Stylish <span>bags</span></div>
+                    <img src="./images/img14.png" alt="" class="item__img">
+                    <div class="item__button">
+                        <a href="#" class="button">читать дальше<i class="fa fa-long-arrow-right ml-3" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-second"></div>
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="active  wow slideInUp" id="active">
+                    <h6>Оставь заявку и я свяжусь с тобой!</h6>
+                    <div class="flower"></div>
+                    <div class="input_block_name"><input  @keyup="checkName()" type="text" class="name" id="name" placeholder="Write your name" required><div class="check_name" id="check_name"></div><div class="warning_name" id="warning_name"></div></div>
+                    <div class="input_block_phone"><input @keyup="checkPhone()" type="tel" class="phone" id="phone" pattern="^[ 0-9]+$" placeholder="Write your number" required="" minlength="10" maxlength="12"><div class="check_phone" id="check_phone"></div><div class="warning_phone" id="warning_phone"></div></div>
+                    <div class="input_block_email"><input @keyup="checkEmail()" type="email" class="email" id="email" placeholder="Write your Email" required=""><div class="check_email" id="check_email"></div><div class="warning_email" id="warning_email"></div></div>
+                    <a class="footer-button" v-on:click="checkForm()">оставить запрос</a>
+                    <div class="flower"></div>
+                    <h6>Или напиши мне лично</h6>
+                </div>
+                <div class="active-feedback" id="active-feedback">
+                    <h6>Спасибо!</h6>
+                    <p>Заявка отправлена!</p>
+                    <div class="flower"></div>
+                    <p>В ближайшее время я свяжусь с тобой! ;)</p>
+                    <div class="footer-logo"></div>
+                    <h6>Или напиши мне лично</h6>
+                </div>
+                <div class="footer-socialIcon__item wow slideInUp">
+                    <a class="icon-yt" href="https://www.youtube.com/channel/UCboLlZFp14ZYkz4up1Sml4Q" target="_blank"></a>
+                    <a class="icon-insta" href="https://www.instagram.com/yablonskaya.alyona.stylist/" target="_blank"></a>
+                </div>
+                <p class="wow slideInUp">yablonskaya.stylist@gmail.com</p>
+            </div>
+        </footer>
+    <div class="modal fade" id="modalFeedback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeModal"><span aria-hidden="true">&times;</span></button>
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Оставь заявку и я свяжусь с тобой!</h4>
+                </div>
+                <div class="flower"></div>
+                <div class="modal-body">
+                    <div class="input_block_name"><input type="text" class="name" id="fb_name" placeholder="Write your name" required><div class="check_name" id="check_nameFeedback"></div><div class="warning_name" id="warning_nameFeedback"></div></div>
+                    <div class="input_block_phone"><input type="tel" class="phone" id="fb_phone" pattern="^[ 0-9]+$" placeholder="Write your number" required="" minlength="10" maxlength="12"><div class="check_phone" id="check_phoneFeedback"></div><div class="warning_phone" id="warning_phoneFeedback"></div></div>
+                    <div class="input_block_email"><input type="email" class="email" id="fb_email" placeholder="Write your Email" required=""><div class="check_email" id="check_emailFeedback"></div><div class="warning_email" id="warning_emailFeedback"></div></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="footer-button modal-footer-button" id="sendFeedback">оставить запрос</button>
+                    <div class="flower"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalThx" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeModalThx"><span aria-hidden="true">&times;</span></button>
+                <div class="modal-header">
+                    <h4 class="modal-title thx" id="myModalLabel">Спасибо!</h4>
+                </div>
+                <div class="modal-body thx">
+                    <p>Заявка отправлена!</p>
+                    <div class="flower"></div>
+                    <p>В ближайшее время я свяжусь с тобой! ;)</p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/smoothscroll.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
