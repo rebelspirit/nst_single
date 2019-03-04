@@ -337,7 +337,7 @@ header {
 }
 .service {
     position: relative;
-    height: 4830px;
+    height: 4730px;
     z-index: 0;
 }
 
@@ -1225,6 +1225,7 @@ main {
     height: 50px;
     background: #232323;
     box-shadow: 0 4px 15px 0 #9f9f9f;
+    border: none !important;
     text-transform: uppercase;
     font-family: Oswald;
     font-size: 12px;
@@ -1423,6 +1424,7 @@ input:invalid:not(:placeholder-shown) {
     height: 30px;
     background-color: #fff;
     border-radius: 50px;
+    border: none !important;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
     margin-top: 10px;
     margin-bottom: 10px;
@@ -1611,7 +1613,9 @@ button.close > span {
     line-height: 1;
     color: #000;
     text-shadow: 0 1px 0 #fff;
-    opacity: .5;
+}
+.close:hover {
+    color: #f68d59;
 }
 .modal-footer-button {
     background: #000;
@@ -2832,3 +2836,30 @@ button.close > span {
         top: 16rem;
     }
 }
+
+/*==========================================SLICK-SLIDER-STYLES==========================================*/
+
+.slick-dots li.slick-active button::before{
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+}
+
+.slick-dots li button::before{
+    font-size: 7px;
+    color: #919191;
+    opacity: 1;
+}
+
+.slick-dots li{
+    width: 10px;
+    height: 10px;
+    margin: 0;
+}
+
+.slick-slide > div {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+/*==========================================SLICK-SLIDER-STYLES-END======================================*/

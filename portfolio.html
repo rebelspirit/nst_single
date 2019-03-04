@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Индивидуальный Стилист</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="animate.css">
+    <link rel="shortcut icon" type="image/png" href="./images/logo-black.ico"/>
 </head>
 <body>
     <div class="wrapper">
@@ -17,7 +20,7 @@
                             <a href="index.html#aboutMe" class="MenuMobile-container--item">обо мне</a>
                             <a href="index.html#services" class="MenuMobile-container--item">услуги</a>
                             <a href="index.html#blog" class="MenuMobile-container--item">Блог</a>
-                            <a href="index.html#contacts" class="MenuMobile-container--item">Контакты</a>
+                            <a href="#contacts" class="MenuMobile-container--item">Контакты</a>
                             <div class="MenuMobile-socialIcons">
                                 <a class="icon-yt-back" href="https://www.youtube.com/channel/UCboLlZFp14ZYkz4up1Sml4Q" target="_blank"></a>
                                 <a class="icon-insta-back" href="https://www.instagram.com/yablonskaya.alyona.stylist/" target="_blank"></a>
@@ -28,13 +31,13 @@
                         <a href="index.html#aboutMe" class="menu-container--item">обо мне</a>
                         <a href="index.html#services" class="menu-container--item">услуги</a>
                         <a href="index.html#blog" class="menu-container--item">Блог</a>
-                        <a href="index.html#contacts" class="menu-container--item">Контакты</a>
+                        <a href="#contacts" class="menu-container--item">Контакты</a>
                     </nav>
-                    <div class="menu-burger" id="menu-burger""></div>
+                    <div class="menu-burger" id="menu-burger"></div>
                     <a href="index.html" class="menu-logo"></a>
                     <div class="menu-socialIcon__item">
-                        <a href="#" class="icon-yt" href="https://www.youtube.com/channel/UCboLlZFp14ZYkz4up1Sml4Q" target="_blank"></a>
-                        <a href="#" class="icon-insta" href="https://www.instagram.com/yablonskaya.alyona.stylist/" target="_blank"></a>
+                        <a class="icon-yt" href="https://www.youtube.com/channel/UCboLlZFp14ZYkz4up1Sml4Q" target="_blank"></a>
+                        <a class="icon-insta" href="https://www.instagram.com/yablonskaya.alyona.stylist/" target="_blank"></a>
                         <a href="#" class="menu-button feedbackModal">оставить запрос</a>
                     </div>
                 </div>
@@ -57,24 +60,18 @@
                     По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых.
                 </p>
                 <div class="portfolioItem-container__content__slider">
-                    <div class="swipe-container slider-active" v-on:swipeleft="onSwipeLeft()" v-on:swiperight="onSwipeRight()">
+                    <div class="swipe-container slider-active">
                         <img src="./images/img8.png" alt="img" class="portfolioItem-container__content__slider--item w-100 h-100">
                     </div>
-                    <div class="swipe-container" v-on:swipeleft="onSwipeLeft()" v-on:swiperight="onSwipeRight()">
+                    <div class="swipe-container">
                         <img src="./images/image-7.png" alt="img" class="portfolioItem-container__content__slider--item w-100 h-100">
                     </div>
-                    <div class="swipe-container" v-on:swipeleft="onSwipeLeft()" v-on:swiperight="onSwipeRight()">
+                    <div class="swipe-container">
                         <img src="./images/img8.png" alt="img" class="portfolioItem-container__content__slider--item  w-100 h-100">
                     </div>
-                    <div class="swipe-container" v-on:swipeleft="onSwipeLeft()" v-on:swiperight="onSwipeRight()">
+                    <div class="swipe-container">
                         <img src="./images/image-7.png" alt="img" class="portfolioItem-container__content__slider--item  w-100 h-100">
                     </div>
-                </div>
-                <div class="navigation">
-                    <div class="dots current" v-on:click="currentSlide(1)"></div>
-                    <div class="dots" v-on:click="currentSlide(2)"></div>
-                    <div class="dots" v-on:click="currentSlide(3)"></div>
-                    <div class="dots" v-on:click="currentSlide(4)"></div>
                 </div>
             </div>
             <div class="portfolioItem-container__suggestion wow slideInRight">
@@ -118,16 +115,16 @@
         <div class="background-second"></div>
         <footer id="footer">
             <div class="footer-container">
-                <div class="active  wow slideInUp" id="active">
+                <form class="active wow slideInUp" id="contact_form">
                     <h6>Оставь заявку и я свяжусь с тобой!</h6>
                     <div class="flower"></div>
-                    <div class="input_block_name"><input  @keyup="checkName()" type="text" class="name" id="name" placeholder="Write your name" required><div class="check_name" id="check_name"></div><div class="warning_name" id="warning_name"></div></div>
-                    <div class="input_block_phone"><input @keyup="checkPhone()" type="tel" class="phone" id="phone" pattern="^[ 0-9]+$" placeholder="Write your number" required="" minlength="10" maxlength="12"><div class="check_phone" id="check_phone"></div><div class="warning_phone" id="warning_phone"></div></div>
-                    <div class="input_block_email"><input @keyup="checkEmail()" type="email" class="email" id="email" placeholder="Write your Email" required=""><div class="check_email" id="check_email"></div><div class="warning_email" id="warning_email"></div></div>
-                    <a class="footer-button" v-on:click="checkForm()">оставить запрос</a>
+                    <div class="input_block_name"><input type="text" class="name" id="c_name" name="c_name" placeholder="Write your name" required><div class="check_name" id="check_name"></div><div class="warning_name" id="warning_name"></div></div>
+                    <div class="input_block_phone"><input type="tel" class="phone" id="c_phone" name="c_phone" pattern="^[ 0-9]+$" placeholder="Write your number" required="" minlength="10" maxlength="12"><div class="check_phone" id="check_phone"></div><div class="warning_phone" id="warning_phone"></div></div>
+                    <div class="input_block_email"><input type="email" class="email" id="c_email" name="c_email" placeholder="Write your Email" required=""><div class="check_email" id="check_email"></div><div class="warning_email" id="warning_email"></div></div>
+                    <input class="footer-button" value="оставить запрос" type="submit" id="footer-button-send">
                     <div class="flower"></div>
                     <h6>Или напиши мне лично</h6>
-                </div>
+                </form>
                 <div class="active-feedback" id="active-feedback">
                     <h6>Спасибо!</h6>
                     <p>Заявка отправлена!</p>
@@ -181,7 +178,8 @@
         </div>
     </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="./js/wow.min.js"></script>
     <script src="./js/smoothscroll.js"></script>
     <script src="./js/main.js"></script>

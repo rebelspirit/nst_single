@@ -34,6 +34,7 @@ body {
     overflow-x: hidden;
 }
 .wrapper {
+    position: relative;
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
@@ -474,10 +475,10 @@ header {
 }
 .background-second {
     z-index: -1;
-    position: relative;
-    top: 50%;
-    left: -50%;
-    width: 125%;
+    position: absolute;
+    top: 70%;
+    left: -15%;
+    width: 99%;
     height: 351px;
     background-color: #f7f7f7;
     transform: rotate(33deg) translate(-10%, -240px);
@@ -686,6 +687,7 @@ input:invalid:not(:placeholder-shown) {
     height: 30px;
     background-color: #fff;
     border-radius: 50px;
+    border: none !important;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
     margin-top: 10px;
     margin-bottom: 10px;
@@ -988,6 +990,20 @@ button.close > span {
     font-family: "Rosa Marena";
     font-size: 23px;
 }
+.slick-dots li.slick-active button::before{
+    color: #ff8447;
+    opacity: 1;
+}
+
+.slick-dots li button::before{
+    font-size: 8px;
+    color: #919191;
+    opacity: 1;
+}
+
+.slick-dots li{
+    margin: 0;
+}
 
 @media (min-width: 320px) and (max-width: 425px) {
     header {
@@ -1067,7 +1083,7 @@ button.close > span {
     }
     .portfolioItem-container__content--image, .portfolioItem-container__content__slider--item {
         width: 100%;
-        height: auto;
+        height: 276px;
         background-size: cover;
         background-position-x: center;
     }
@@ -1169,7 +1185,7 @@ button.close > span {
     }
     .portfolioItem-container__content--image, .portfolioItem-container__content__slider--item {
         width: 100%;
-        height: auto;
+        height: 400px;
         background-size: cover;
         background-position-x: center;
     }
@@ -1276,7 +1292,7 @@ button.close > span {
     }
     .portfolioItem-container__content--image, .portfolioItem-container__content__slider--item {
         width: 100%;
-        height: auto;
+        height: 440px;
         background-size: cover;
         background-position-x: center;
     }

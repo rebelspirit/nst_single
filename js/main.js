@@ -201,6 +201,11 @@
                 email.style.borderColor = "#ea5a5a";
             }
         });
+        
+        $("#footer-button-send").click(function () {
+            $("#contact_form").css( "display", "none" );
+            $("#active-feedback").css( "display", "flex" );
+        })
         /* ---------------------------------------------- /*
          * E-mail validation
         /* ---------------------------------------------- */
@@ -338,6 +343,27 @@
         $('#sendService').click(function () {
             $('#modalService').toggle()
             $('#modalThx').toggle()
+        })
+        $('.portfolio-container__items').slick({
+            dots: true,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 9999,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        arrows: false,
+                        dots: true,
+                    }
+                }
+            ],
+        });
+        $('.portfolioItem-container__content__slider').slick({
+            dots: true,
+            arrows: false,
         })
     });
 
