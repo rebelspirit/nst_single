@@ -322,10 +322,13 @@
         });
 
         $('.feedbackModal').click(function () {
+            $('body').css( "overflow-y", "hidden" );
             $('#modalFeedback').toggle()
+            $('#modalFeedback').css( "overflow", "auto" );
         })
         $('#closeModal').click(function () {
             $('#modalFeedback').toggle()
+            $('body').css( "overflow-y", "auto" );
         })
         $('#closeModalThx').click(function () {
             $('#modalThx').toggle()
@@ -333,16 +336,21 @@
         $('#sendFeedback').click(function () {
             $('#modalFeedback').toggle()
             $('#modalThx').toggle()
+            $('body').css( "overflow-y", "auto" );
         })
         $('button.button').click(function () {
+            $('body').css( "overflow-y", "hidden" );
             $('#modalService').toggle()
+            $('#modalService').css( "overflow", "auto" );
         })
         $('#closeModalService').click(function () {
             $('#modalService').toggle()
+            $('body').css( "overflow-y", "auto" );
         })
         $('#sendService').click(function () {
             $('#modalService').toggle()
             $('#modalThx').toggle()
+            $('body').css( "overflow-y", "auto" );
         })
         $('.portfolio-container__items').slick({
             dots: true,
