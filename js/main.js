@@ -352,6 +352,25 @@
             $('#modalThx').toggle()
             $('body').css( "overflow-y", "auto" );
         })
+        $("#modalFeedback").click(function(e) {
+            if($(e.target).closest(".modal-content").length==0) {
+                $('#modalFeedback').toggle();
+                $('body').css( "overflow-y", "auto" );
+            }
+        });
+        $("#modalThx").click(function(e) {
+            if($(e.target).closest(".modal-content").length==0) {
+                $('#modalThx').toggle();
+                $('body').css( "overflow-y", "auto" );
+            }
+        });
+        $("#modalService").click(function(e) {
+            if($(e.target).closest(".modal-content").length==0) {
+                $('#modalService').toggle();
+                $('body').css( "overflow-y", "auto" );
+            }
+        });
+
         $('.portfolio-container__items').slick({
             dots: true,
             arrows: false,
