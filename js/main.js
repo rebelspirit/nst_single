@@ -48,7 +48,7 @@
         /* ---------------------------------------------- */
 
         wow = new WOW({
-            mobile: false
+            mobile: true
         });
         wow.init();
 
@@ -266,8 +266,7 @@
             }
             //show container
             $( "#first" ).toggle();
-            //set container new height
-            //$("#service").css( "height", "2610px" );
+            calcContainerHeight();
             //show the next button
             $("#second-button").css( "display", "flex" );
         });
@@ -279,8 +278,7 @@
             }
             //show container
             $( "#second" ).toggle();
-            //set container new height
-            //$("#service").css( "height", "3550px" );
+            calcContainerHeight();
             //show the next button
             $("#third-button").css( "display", "flex" );
         });
@@ -292,8 +290,7 @@
             }
             //show container
             $( "#third" ).toggle();
-            //set container new height
-            //$("#service").css( "height", "4340px" );
+            calcContainerHeight();
             //show the next button
             $("#fourth-button").css( "display", "flex" );
         });
@@ -305,8 +302,7 @@
             }
             //show container
             $( "#fourth" ).toggle();
-            //set container new height
-            //$("#service").css( "height", "4990px" );
+            calcContainerHeight();
             //show the next button
             $("#fives-button").css( "display", "flex" );
         });
@@ -318,39 +314,38 @@
             }
             //show container
             $( "#five" ).toggle();
-            //set container new height
-            //$("#service").css( "height", "5500px" );
+            calcContainerHeight();
         });
 
         $('.feedbackModal').click(function () {
             $('body').css( "overflow-y", "hidden" );
-            $('#modalFeedback').toggle()
+            $('#modalFeedback').toggle();
             $('#modalFeedback').css( "overflow", "auto" );
         })
         $('#closeModal').click(function () {
-            $('#modalFeedback').toggle()
+            $('#modalFeedback').toggle();
             $('body').css( "overflow-y", "auto" );
         })
         $('#closeModalThx').click(function () {
-            $('#modalThx').toggle()
+            $('#modalThx').toggle();
         })
         $('#sendFeedback').click(function () {
-            $('#modalFeedback').toggle()
-            $('#modalThx').toggle()
+            $('#modalFeedback').toggle();
+            $('#modalThx').toggle();
             $('body').css( "overflow-y", "auto" );
         })
         $('button.button').click(function () {
             $('body').css( "overflow-y", "hidden" );
-            $('#modalService').toggle()
+            $('#modalService').toggle();
             $('#modalService').css( "overflow", "auto" );
         })
         $('#closeModalService').click(function () {
-            $('#modalService').toggle()
+            $('#modalService').toggle();
             $('body').css( "overflow-y", "auto" );
         })
         $('#sendService').click(function () {
-            $('#modalService').toggle()
-            $('#modalThx').toggle()
+            $('#modalService').toggle();
+            $('#modalThx').toggle();
             $('body').css( "overflow-y", "auto" );
         })
         $("#modalFeedback").click(function(e) {
@@ -395,85 +390,179 @@
         })
     });
 
-    // Consultation container height math
-    setTimeout(function () {
-        let container;
-        let containerImage = $(".consultation-container__image").outerHeight();
-        let containerDescription = $(".consultation-container__description").outerHeight();
+    function calcContainerHeight () {
+        let screen = $(window).width();
 
-        container = containerImage + containerDescription - 120;
+        // Consultation container height math
+        setTimeout(function () {
+            let container;
+            let containerImage = $(".consultation-container__image").outerHeight();
+            let containerDescription = $(".consultation-container__description").outerHeight();
 
-        $(".consultation-container").height(container);
-
-        //console.log(container, containerImage, containerDescription);
-    }, 0);
-
-    // CardStyle container height math
-    setTimeout(function () {
-        let container;
-        let containerImage = $(".cardStyle-container__image").outerHeight();
-        let containerDescription = $(".cardStyle-container__description").outerHeight();
-
-        container = containerImage + containerDescription - 120;
-
-        $(".cardStyle-container").height(container);
-
-        //console.log(container, containerImage, containerDescription);
-    }, 0);
-
-    // Revision container height math
-    setTimeout(function () {
-        let container;
-        let containerImage = $(".revision-container__image").outerHeight();
-        let containerDescription = $(".revision-container__description").outerHeight();
-
-        container = containerImage + containerDescription - 120;
-
-        $(".revision-container").height(container);
-
-        //console.log(container, containerImage, containerDescription);
-    }, 0);
-
-    // personalShoping container height math
-    setTimeout(function () {
-        let container;
-        let containerImage = $(".personalShoping-container__image").outerHeight();
-        let containerDescription = $(".personalShoping-container__description").outerHeight();
-
-        container = containerImage + containerDescription - 120;
-
-        $(".personalShoping-container").height(container);
-
-        //console.log(container, containerImage, containerDescription);
-    }, 0);
-
-    // Capsule container height math
-    setTimeout(function () {
-        let container;
-        let containerImage = $(".capsule-container__image").outerHeight();
-        let containerDescription = $(".capsule-container__description").outerHeight();
-
-        container = containerImage + containerDescription - 120;
-
-        $(".capsule-container").height(container);
-
-        //console.log(container, containerImage, containerDescription);
-    }, 0);
-
-    // GiftCard container height math
-    setTimeout(function () {
-        let container;
-        let containerImage = $(".giftCard-container__image").outerHeight();
-        let containerDescription = $(".giftCard-container__description").outerHeight();
-
-        container = containerImage + containerDescription - 120;
-
-        $(".giftCard-container").height(container);
-
-        //console.log(container, containerImage, containerDescription);
-    }, 0);
+            if(screen < 425) {
+                //console.log("screen <= 425");
+                container = containerImage + containerDescription - 65;
+            }
+            if(screen >= 425 && screen < 728) {
+                //console.log("screen >= 425 && screen < 728");
+                container = containerImage + containerDescription - 45;
+            }
+            if(screen >= 728 && screen <= 1025) {
+                //console.log("screen <= 728 && screen >= 1025");
+                container = containerImage + containerDescription - 120;
+            }
+            if(screen > 1025 ){
+                //console.log("screen > 1025");
+                container = containerImage + containerDescription - 120;
+            }
 
 
+            $(".consultation-container").height(container);
+            console.log("screen " + screen);
+            //console.log(container, containerImage, containerDescription);
+        }, 0);
+
+        // CardStyle container height math
+        setTimeout(function () {
+            let container;
+            let containerImage = $(".cardStyle-container__image").outerHeight();
+            let containerDescription = $(".cardStyle-container__description").outerHeight();
+
+            if(screen < 425) {
+                console.log("screen <= 425");
+                container = containerImage + containerDescription - 65;
+            }
+            if(screen >= 425 && screen < 728) {
+                console.log("screen >= 425 && screen < 728");
+                container = containerImage + containerDescription - 45;
+            }
+            if(screen >= 728 && screen <= 1025) {
+                console.log("screen <= 728 && screen >= 1025");
+                container = containerImage + containerDescription - 100;
+            }
+            if(screen > 1025 ){
+                console.log("screen > 1025");
+                container = containerImage + containerDescription - 120;
+            }
+
+            $(".cardStyle-container").height(container);
+
+            console.log(container, containerImage, containerDescription);
+        }, 0);
+
+        // Revision container height math
+        setTimeout(function () {
+            let container;
+            let containerImage = $(".revision-container__image").outerHeight();
+            let containerDescription = $(".revision-container__description").outerHeight();
+
+            if(screen < 425) {
+                //console.log("screen <= 425");
+                container = containerImage + containerDescription - 65;
+            }
+            if(screen >= 425 && screen < 728) {
+                //console.log("screen >= 425 && screen < 728");
+                container = containerImage + containerDescription - 45;
+            }
+            if(screen >= 728 && screen <= 1025) {
+                //console.log("screen <= 728 && screen >= 1025");
+                container = containerImage + containerDescription - 120;
+            }
+            if(screen > 1025 ){
+                //console.log("screen > 1025");
+                container = containerImage + containerDescription - 120;
+            }
+
+            $(".revision-container").height(container);
+
+            //console.log(container, containerImage, containerDescription);
+        }, 0);
+
+        // personalShoping container height math
+        setTimeout(function () {
+            let container;
+            let containerImage = $(".personalShoping-container__image").outerHeight();
+            let containerDescription = $(".personalShoping-container__description").outerHeight();
+
+            if(screen < 425) {
+                //console.log("screen <= 425");
+                container = containerImage + containerDescription - 65;
+            }
+            if(screen >= 425 && screen < 728) {
+                //console.log("screen >= 425 && screen < 728");
+                container = containerImage + containerDescription - 45;
+            }
+            if(screen >= 728 && screen <= 1025) {
+                //console.log("screen <= 728 && screen >= 1025");
+                container = containerImage + containerDescription - 120;
+            }
+            if(screen > 1025 ){
+                //console.log("screen > 1025");
+                container = containerImage + containerDescription - 120;
+            }
+
+            $(".personalShoping-container").height(container);
+
+            //console.log(container, containerImage, containerDescription);
+        }, 0);
+
+        // Capsule container height math
+        setTimeout(function () {
+            let container;
+            let containerImage = $(".capsule-container__image").outerHeight();
+            let containerDescription = $(".capsule-container__description").outerHeight();
+
+            if(screen < 425) {
+                //console.log("screen <= 425");
+                container = containerImage + containerDescription - 65;
+            }
+            if(screen >= 425 && screen < 728) {
+                //console.log("screen >= 425 && screen < 728");
+                container = containerImage + containerDescription - 45;
+            }
+            if(screen >= 728 && screen <= 1025) {
+                //console.log("screen <= 728 && screen >= 1025");
+                container = containerImage + containerDescription - 120;
+            }
+            if(screen > 1025 ){
+                //console.log("screen > 1025");
+                container = containerImage + containerDescription - 120;
+            }
+
+            $(".capsule-container").height(container);
+
+            //console.log(container, containerImage, containerDescription);
+        }, 0);
+
+        // GiftCard container height math
+        setTimeout(function () {
+            let container;
+            let containerImage = $(".giftCard-container__image").outerHeight();
+            let containerDescription = $(".giftCard-container__description").outerHeight();
+
+            if(screen < 425) {
+                //console.log("screen <= 425");
+                container = containerImage + containerDescription - 65;
+            }
+            if(screen >= 425 && screen < 728) {
+                //console.log("screen >= 425 && screen < 728");
+                container = containerImage + containerDescription - 45;
+            }
+            if(screen >= 728 && screen <= 1025) {
+                //console.log("screen <= 728 && screen >= 1025");
+                container = containerImage + containerDescription - 120;
+            }
+            if(screen > 1025 ){
+                //console.log("screen > 1025");
+                container = containerImage + containerDescription - 120;
+            }
+
+            $(".giftCard-container").height(container);
+
+            //console.log(container, containerImage, containerDescription);
+        }, 0);
+    }
+    calcContainerHeight();
 
 
 })(jQuery);

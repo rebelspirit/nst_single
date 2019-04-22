@@ -1801,10 +1801,6 @@ button.close > span {
     .flower-mobile {
         margin: 40px auto;
     }
-    .service {
-        height: 1740px;
-    }
-
     .background {
         display: none;
     }
@@ -1857,8 +1853,7 @@ button.close > span {
 
     .consultation-container {
         max-width: none;
-        margin-bottom: 120px;
-        height: 720px;
+        margin-bottom: 70px;
     }
 
     .consultation-container__image {
@@ -1882,7 +1877,7 @@ button.close > span {
     }
 
     .consultation-container__description {
-        top: 40%;
+        top: 230px;
         left: 0;
         max-width: none;
         padding: 25px 20px 30px 20px;
@@ -1898,8 +1893,7 @@ button.close > span {
 
     .cardStyle-container {
         display: none;
-        height: 800px;
-        margin-bottom: 240px;
+        margin-bottom: 70px;
     }
 
     .cardStyle-container__image {
@@ -1910,7 +1904,7 @@ button.close > span {
 
     .cardStyle-container__description {
         left: 0;
-        top: 45%;
+        top: 230px;
     }
 
     h2 {
@@ -1925,8 +1919,7 @@ button.close > span {
 
     .revision-container {
         display: none;
-        height: 720px;
-        margin-bottom: 290px;
+        margin-bottom: 70px;
     }
 
     .revision-container__image {
@@ -1937,7 +1930,7 @@ button.close > span {
 
     .revision-container__description {
         left: 0;
-        top: 42%;
+        top: 230px;
         max-width: none;
     }
 
@@ -1950,8 +1943,7 @@ button.close > span {
     }
     .personalShoping-container {
         display: none;
-        height: 800px;
-        margin-bottom: 140px;
+        margin-bottom: 70px;
     }
 
     .personalShoping-container__image {
@@ -1962,15 +1954,14 @@ button.close > span {
 
     .personalShoping-container__description {
         left: 0;
-        top: 40%;
+        top: 230px;
         max-width: none;
         padding: 25px 17px 30px 17px;
     }
 
     .capsule-container {
         display: none;
-        height: 800px;
-        margin-bottom: 100px;
+        margin-bottom: 70px;
     }
 
     .capsule-container__image {
@@ -1981,14 +1972,13 @@ button.close > span {
 
     .capsule-container__description {
         left: 0;
-        top: 40%;
+        top: 230px;
         max-width: none;
     }
 
     .giftCard-container {
         display: none;
-        height: 800px;
-        margin-bottom: 80px;
+        margin-bottom: 70px;
     }
 
     .giftCard-container__image {
@@ -1999,7 +1989,7 @@ button.close > span {
 
     .giftCard-container__description {
         left: 0;
-        top: 40%;
+        top: 230px;
         max-width: none;
     }
     .giftCard-container__description__block > h2 {
@@ -2051,8 +2041,7 @@ button.close > span {
         display: none !important;
     }
     .portfolio {
-        position: relative;
-        top: 0;
+        margin-bottom: 70px;
     }
     .portfolio-container__name {
         width: 100%;
@@ -2095,10 +2084,6 @@ button.close > span {
         height: 10px;
         border-radius: 5px;
         background-color: #232323;
-    }
-    footer {
-        position: relative;
-        top: 3rem;
     }
     .modal-body-service > p {
         padding: 0 15px;
@@ -2193,10 +2178,6 @@ button.close > span {
         margin-left: auto;
         margin-right: auto;
     }
-    .service {
-        height: 1740px;
-    }
-
     .background {
         display: none;
     }
@@ -2249,8 +2230,7 @@ button.close > span {
 
     .consultation-container {
         max-width: none;
-        margin-bottom: 120px;
-        height: 720px;
+        margin-bottom: 50px;
     }
 
     .consultation-container__image {
@@ -2274,7 +2254,7 @@ button.close > span {
     }
 
     .consultation-container__description {
-        top: 40%;
+        top: 250px;
         left: 0;
         max-width: none;
         padding: 25px 20px 30px 20px;
@@ -2290,19 +2270,17 @@ button.close > span {
 
     .cardStyle-container {
         display: none;
-        height: 800px;
-        margin-bottom: 240px;
+        margin-bottom: 50px;
     }
 
     .cardStyle-container__image {
         min-height: 295px;
-        /*background-size: cover;*/
         background-position-x: center;
     }
 
     .cardStyle-container__description {
         left: 0;
-        top: 45%;
+        top: 250px;
         max-width: none;
     }
 
@@ -2318,8 +2296,7 @@ button.close > span {
 
     .revision-container {
         display: none;
-        height: 720px;
-        margin-bottom: 290px;
+        margin-bottom: 50px;
     }
 
     .revision-container__image {
@@ -2330,7 +2307,7 @@ button.close > span {
 
     .revision-container__description {
         left: 0;
-        top: 42%;
+        top: 250px;
         max-width: none;
     }
 
@@ -2343,8 +2320,7 @@ button.close > span {
     }
     .personalShoping-container {
         display: none;
-        height: 800px;
-        margin-bottom: 140px;
+        margin-bottom: 50px;
     }
 
     .personalShoping-container__image {
@@ -2355,15 +2331,14 @@ button.close > span {
 
     .personalShoping-container__description {
         left: 0;
-        top: 40%;
+        top: 250px;
         max-width: none;
         padding: 25px 17px 30px 17px;
     }
 
     .capsule-container {
         display: none;
-        height: 800px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 
     .capsule-container__image {
@@ -2374,14 +2349,13 @@ button.close > span {
 
     .capsule-container__description {
         left: 0;
-        top: 40%;
+        top: 250px;
         max-width: none;
     }
 
     .giftCard-container {
         display: none;
-        height: 800px;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
 
     .giftCard-container__image {
@@ -2392,7 +2366,7 @@ button.close > span {
 
     .giftCard-container__description {
         left: 0;
-        top: 40%;
+        top: 250px;
         max-width: none;
     }
     .giftCard-container__description__block > h2 {
@@ -2444,8 +2418,7 @@ button.close > span {
         display: none !important;
     }
     .portfolio {
-        position: relative;
-        top: 0;
+        margin-bottom: 70px;
     }
     .portfolio-container__name {
         width: 100%;
@@ -2488,10 +2461,6 @@ button.close > span {
         height: 10px;
         border-radius: 5px;
         background-color: #232323;
-    }
-    footer {
-        position: relative;
-        top: 3rem;
     }
 }
 @media (min-width: 728px) and (max-width: 1025px) {
@@ -2612,8 +2581,6 @@ button.close > span {
     }
 
     .consultation-container {
-        max-height: 640px;
-        height: 100%;
         margin-bottom: 50px;
     }
 
@@ -2639,7 +2606,7 @@ button.close > span {
     }
 
     .consultation-container__description {
-        top: 45%;
+        top: 300px;
         max-width: 634px;
         left: 50%;
         transform: translateX(-50%);
@@ -2653,9 +2620,7 @@ button.close > span {
 
     .cardStyle-container {
         display: block;
-        max-height: 640px;
-        height: 100%;
-        margin-bottom: 110px;
+        margin-bottom: 50px;
     }
 
     .cardStyle-container__image {
@@ -2666,7 +2631,7 @@ button.close > span {
         max-width: 634px;
         left: 50%;
         transform: translateX(-50%);
-        top: 45%;
+        top: 300px;
     }
 
     h2 {
@@ -2679,9 +2644,7 @@ button.close > span {
 
     .revision-container {
         display: block;
-        max-height: 640px;
-        height: 100%;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 
     .revision-container__image {
@@ -2694,7 +2657,7 @@ button.close > span {
         max-width: 634px;
         left: 50%;
         transform: translateX(-50%);
-        top: 45%;
+        top: 300px;
     }
     .revision-container__description__block > .list > ol {
         padding-left: 0;
@@ -2705,9 +2668,7 @@ button.close > span {
 
     .personalShoping-container {
         display: block;
-        max-height: 640px;
-        height: 100%;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
 
     .personalShoping-container__image {
@@ -2720,14 +2681,12 @@ button.close > span {
         max-width: 634px;
         left: 50%;
         transform: translateX(-50%);
-        top: 45%;
+        top: 300px;
         padding: 25px 17px 30px 17px;
     }
 
     .capsule-container {
         display: block;
-        max-height: 555px;
-        height: 100%;
         margin-bottom: 50px;
     }
 
@@ -2741,13 +2700,11 @@ button.close > span {
         max-width: 634px;
         left: 50%;
         transform: translateX(-50%);
-        top: 50%;
+        top: 300px;
     }
 
     .giftCard-container {
         display: block;
-        max-height: 520px;
-        height: 100%;
         margin-bottom: 50px;
     }
 
@@ -2761,7 +2718,7 @@ button.close > span {
         max-width: 634px;
         left: 50%;
         transform: translateX(-50%);
-        top: 50%;
+        top: 300px;
     }
 
     .giftCard-container__description__block > h2 > .dot {
@@ -2772,8 +2729,7 @@ button.close > span {
         display: none;
     }
     .portfolio {
-        position: relative;
-        top: 13rem;
+        margin-bottom: 70px;
     }
     .portfolio-container__name {
         width: 470px;
@@ -2816,10 +2772,6 @@ button.close > span {
         height: 10px;
         border-radius: 5px;
         background-color: #232323;
-    }
-    footer {
-        position: relative;
-        top: 16rem;
     }
 }
 
