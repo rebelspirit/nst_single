@@ -35,6 +35,7 @@
         });
 
         $(window).scroll(function() {
+
             if ($(this).scrollTop() > 100) {
                 $('.scroll-up').fadeIn();
             } else {
@@ -266,7 +267,7 @@
             //show container
             $( "#first" ).toggle();
             //set container new height
-            $("#service").css( "height", "2610px" );
+            //$("#service").css( "height", "2610px" );
             //show the next button
             $("#second-button").css( "display", "flex" );
         });
@@ -279,7 +280,7 @@
             //show container
             $( "#second" ).toggle();
             //set container new height
-            $("#service").css( "height", "3550px" );
+            //$("#service").css( "height", "3550px" );
             //show the next button
             $("#third-button").css( "display", "flex" );
         });
@@ -292,7 +293,7 @@
             //show container
             $( "#third" ).toggle();
             //set container new height
-            $("#service").css( "height", "4340px" );
+            //$("#service").css( "height", "4340px" );
             //show the next button
             $("#fourth-button").css( "display", "flex" );
         });
@@ -305,7 +306,7 @@
             //show container
             $( "#fourth" ).toggle();
             //set container new height
-            $("#service").css( "height", "4990px" );
+            //$("#service").css( "height", "4990px" );
             //show the next button
             $("#fives-button").css( "display", "flex" );
         });
@@ -318,7 +319,7 @@
             //show container
             $( "#five" ).toggle();
             //set container new height
-            $("#service").css( "height", "5500px" );
+            //$("#service").css( "height", "5500px" );
         });
 
         $('.feedbackModal').click(function () {
@@ -393,6 +394,86 @@
             arrows: false,
         })
     });
+
+    // Consultation container height math
+    setTimeout(function () {
+        let container;
+        let containerImage = $(".consultation-container__image").outerHeight();
+        let containerDescription = $(".consultation-container__description").outerHeight();
+
+        container = containerImage + containerDescription - 120;
+
+        $(".consultation-container").height(container);
+
+        //console.log(container, containerImage, containerDescription);
+    }, 0);
+
+    // CardStyle container height math
+    setTimeout(function () {
+        let container;
+        let containerImage = $(".cardStyle-container__image").outerHeight();
+        let containerDescription = $(".cardStyle-container__description").outerHeight();
+
+        container = containerImage + containerDescription - 120;
+
+        $(".cardStyle-container").height(container);
+
+        //console.log(container, containerImage, containerDescription);
+    }, 0);
+
+    // Revision container height math
+    setTimeout(function () {
+        let container;
+        let containerImage = $(".revision-container__image").outerHeight();
+        let containerDescription = $(".revision-container__description").outerHeight();
+
+        container = containerImage + containerDescription - 120;
+
+        $(".revision-container").height(container);
+
+        //console.log(container, containerImage, containerDescription);
+    }, 0);
+
+    // personalShoping container height math
+    setTimeout(function () {
+        let container;
+        let containerImage = $(".personalShoping-container__image").outerHeight();
+        let containerDescription = $(".personalShoping-container__description").outerHeight();
+
+        container = containerImage + containerDescription - 120;
+
+        $(".personalShoping-container").height(container);
+
+        //console.log(container, containerImage, containerDescription);
+    }, 0);
+
+    // Capsule container height math
+    setTimeout(function () {
+        let container;
+        let containerImage = $(".capsule-container__image").outerHeight();
+        let containerDescription = $(".capsule-container__description").outerHeight();
+
+        container = containerImage + containerDescription - 120;
+
+        $(".capsule-container").height(container);
+
+        //console.log(container, containerImage, containerDescription);
+    }, 0);
+
+    // GiftCard container height math
+    setTimeout(function () {
+        let container;
+        let containerImage = $(".giftCard-container__image").outerHeight();
+        let containerDescription = $(".giftCard-container__description").outerHeight();
+
+        container = containerImage + containerDescription - 120;
+
+        $(".giftCard-container").height(container);
+
+        //console.log(container, containerImage, containerDescription);
+    }, 0);
+
+
 
 
 })(jQuery);

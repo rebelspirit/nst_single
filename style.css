@@ -33,6 +33,7 @@ body {
     overflow-x: hidden;
 }
 .wrapper {
+    position: relative;
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
@@ -336,24 +337,20 @@ header {
     display: block;
 }
 .service {
-    position: relative;
-    height: 4730px;
     z-index: 0;
 }
 
 main {
-    position: absolute;
     z-index: 1;
     width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
     margin-top: -165px;
+    margin-bottom: 80px;
 }
 
 .background {
     z-index: -1;
-    position: relative;
+    position: absolute;
+    top: 13%;
     width: 200%;
     height: 500px;
     background-color: #f7f7f7;
@@ -489,8 +486,6 @@ main {
     position: relative;
     width: 100%;
     max-width: 780px;
-    max-height: 640px;
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -551,7 +546,7 @@ main {
     justify-content: center;
     position: absolute;
     left: 10%;
-    top: 45%;
+    top: 300px;
     width: 100%;
     max-width: 634px;
     min-height: 345px;
@@ -681,11 +676,9 @@ main {
     position: relative;
     width: 100%;
     max-width: 780px;
-    max-height: 640px;
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 110px;
+    margin-bottom: 50px;
 }
 
 .cardStyle-container__image {
@@ -705,7 +698,7 @@ main {
     justify-content: center;
     position: absolute;
     left: 10%;
-    top: 45%;
+    top: 300px;
     width: 100%;
     max-width: 634px;
     min-height: 345px;
@@ -773,11 +766,9 @@ main {
     position: relative;
     width: 100%;
     max-width: 780px;
-    max-height: 650px;
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 }
 
 .revision-container__image {
@@ -796,7 +787,7 @@ main {
     justify-content: center;
     position: absolute;
     left: 10%;
-    top: 45%;
+    top: 300px;
     width: 100%;
     max-width: 634px;
     min-height: 345px;
@@ -876,11 +867,9 @@ main {
     position: relative;
     width: 100%;
     max-width: 780px;
-    max-height: 640px;
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .personalShoping-container__image {
@@ -899,7 +888,7 @@ main {
     justify-content: center;
     position: absolute;
     left: 10%;
-    top: 45%;
+    top: 300px;
     width: 100%;
     max-width: 634px;
     min-height: 345px;
@@ -952,8 +941,6 @@ main {
     position: relative;
     width: 100%;
     max-width: 780px;
-    max-height: 560px;
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -975,7 +962,7 @@ main {
     justify-content: center;
     position: absolute;
     left: 10%;
-    top: 50%;
+    top: 300px;
     width: 100%;
     max-width: 634px;
     min-height: 270px;
@@ -1024,8 +1011,6 @@ main {
     position: relative;
     width: 100%;
     max-width: 780px;
-    max-height: 550px;
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -1047,7 +1032,7 @@ main {
     justify-content: center;
     position: absolute;
     left: 10%;
-    top: 50%;
+    top: 300px;
     width: 100%;
     max-width: 634px;
     min-height: 270px;
@@ -1097,8 +1082,8 @@ main {
 }
 .background-second {
     z-index: -1;
-    position: relative;
-    top: 50%;
+    position: absolute;
+    top: 55%;
     width: 200%;
     height: 500px;
     background-color: #f7f7f7;
