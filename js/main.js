@@ -429,25 +429,25 @@
             let containerDescription = $(".cardStyle-container__description").outerHeight();
 
             if(screen < 425) {
-                console.log("screen <= 425");
+                //console.log("screen <= 425");
                 container = containerImage + containerDescription - 65;
             }
             if(screen >= 425 && screen < 728) {
-                console.log("screen >= 425 && screen < 728");
+                //console.log("screen >= 425 && screen < 728");
                 container = containerImage + containerDescription - 45;
             }
             if(screen >= 728 && screen <= 1025) {
-                console.log("screen <= 728 && screen >= 1025");
+                //console.log("screen <= 728 && screen >= 1025");
                 container = containerImage + containerDescription - 100;
             }
             if(screen > 1025 ){
-                console.log("screen > 1025");
+                //console.log("screen > 1025");
                 container = containerImage + containerDescription - 120;
             }
 
             $(".cardStyle-container").height(container);
 
-            console.log(container, containerImage, containerDescription);
+            //console.log(container, containerImage, containerDescription);
         }, 0);
 
         // Revision container height math
